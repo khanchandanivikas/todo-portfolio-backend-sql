@@ -94,7 +94,7 @@ const editCompleteTodo = (req, res, next) => {
 
   const { complete } = req.body;
 
-  const sql = `UPDATE todo SET complete = '${complete}' WHERE id = ${idTodo}`;
+  const sql = `UPDATE todoportfolio SET complete = '${complete}' WHERE id = ${idTodo}`;
 
   connection.query(sql, (error) => {
     if (error) throw error;
