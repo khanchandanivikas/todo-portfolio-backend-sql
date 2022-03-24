@@ -4,6 +4,7 @@ const { check } = require("express-validator");
 
 const controladorTodo = require("../controllers/controlador-todo");
 
+// get all todos
 router.get("/", controladorTodo.recuperarTodosTodos);
 
 router.get("/complete", controladorTodo.recuperarCompleteTodos);
